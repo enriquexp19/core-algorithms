@@ -1,5 +1,6 @@
 export default function fizzBuzzz(num) {
 	var array = []
+	if (isNaN(num)) {return 'error'}
 	for (var i = 1; i <= num; i++) {
 		if (i % 15 == 0) {
 			array.push('fizzBuzz')
