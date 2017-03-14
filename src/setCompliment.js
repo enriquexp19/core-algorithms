@@ -1,5 +1,5 @@
 export default function setCompliment(a, b) {	
-	var array = [],
+	var array = []
 	if (typeof a !== 'object' || typeof b !== 'object') {
 		return 'error'
 	}
