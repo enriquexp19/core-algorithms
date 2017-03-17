@@ -3,7 +3,7 @@ export default function setUnion(a, b) {
 		return "error"
 	}
 	var result = a
-	if (b != null) {	
+	if (b != null) {
 		for (var i = 0; i < b.length; i++){
 			if (result.includes(b[i])) {
 				continue

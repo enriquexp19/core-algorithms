@@ -17,5 +17,5 @@ import factorial from "../src/factorial"
  		const output = factorial(7)
  		expect(output).to.equal(5040)
  	})
- 	
+
  })

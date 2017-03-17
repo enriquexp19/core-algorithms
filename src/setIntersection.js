@@ -12,7 +12,7 @@ export default function setIntersection(a, b) {
 		}
 	}
 	if (array.length === 0) {
-			return 'There are no numbers in common'	
-		}	
-	else return array 
+			return 'There are no numbers in common'
+		}
+	else return array
 }

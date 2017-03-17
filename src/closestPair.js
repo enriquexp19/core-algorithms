@@ -8,8 +8,8 @@ export default function closestsPair(points) {
 			if (i===j){
 				continue
 			}
-			let x2 = points[i][0], y2 = points[i][1] 
-			let x1 = points[j][0], y1 = points[j][1] 
+			let x2 = points[i][0], y2 = points[i][1]
+			let x1 = points[j][0], y1 = points[j][1]
 			let a = [x1, y1], b = [x2, y2]
 			let dist = Math.abs(x2 - x1) + Math.abs(y2 - y1)
 			if (dist < minDist) {

@@ -28,13 +28,13 @@ export default function binarySearch(array, query) {
 		if(query < midVal) {
 			dissectArr = divide(dissectArr, 0)
             assignVal()
-            
+
 		}
 		if(query > midVal) {
 			dissectArr = divide(dissectArr, 1)
             assignVal()
 		}
 	}
-	return array.indexOf(midVal) 
+	return array.indexOf(midVal)
 
 }
