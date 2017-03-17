@@ -15,6 +15,6 @@ describe("collatzConjecture", function() {
 
 	it("should return an error with invalid input", function() {
 		const output = collatzConjecture("str")
-		expect(output).to.equal("error")
+		expect(output).to.deep.equal(Error('Input is not a number'))
 	})
 })
