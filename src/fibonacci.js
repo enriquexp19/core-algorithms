@@ -1,17 +1,10 @@
 export default function fibonacci(num) {
-	if(isNaN(num) || num <= 0) {
-		return "error"
+	if (isNaN(num)) { return new Error("NaN") }
+	function findFib(num){
+		if (num < 2) { return num }
+		return findFib(num - 1) + findFib(num - 2)
 	}
-	var array = [];
-	if (num > 0) {
-		array.push(0)
-		}
-	if (num > 1) {
-		array.push(1);
-	}
-	for (var i = 2; i < num; i++) {
-		var result = array[i-2] + array[i-1];
-		array.push(result);
-	}
-	return array
+	let result = []
+	for (let i = 0; i < num; i++) { result.push(findFib(i)) }
+	return result
 }
